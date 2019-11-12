@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		184F138B237A87130061EBB9 /* DetailWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */; };
+		184F139D237A97A20061EBB9 /* wearing.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F1398237A97A10061EBB9 /* wearing.png */; };
+		184F139E237A97A20061EBB9 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F1399237A97A10061EBB9 /* sports.png */; };
+		184F139F237A97A20061EBB9 /* umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F139A237A97A10061EBB9 /* umbrella.png */; };
+		184F13A0237A97A20061EBB9 /* ray.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F139B237A97A10061EBB9 /* ray.png */; };
+		184F13A1237A97A20061EBB9 /* washing.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F139C237A97A10061EBB9 /* washing.png */; };
 		58CE0E1F23714E2F00011C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE0E1E23714E2F00011C14 /* AppDelegate.swift */; };
 		58CE0E2123714E2F00011C14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE0E2023714E2F00011C14 /* ViewController.swift */; };
 		58CE0E2423714E2F00011C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2223714E2F00011C14 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 
 /* Begin PBXFileReference section */
 		184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherViewController.swift; sourceTree = "<group>"; };
+		184F1398237A97A10061EBB9 /* wearing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wearing.png; path = ../../../../Downloads/wearing.png; sourceTree = "<group>"; };
+		184F1399237A97A10061EBB9 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sports.png; path = ../../../../Downloads/sports.png; sourceTree = "<group>"; };
+		184F139A237A97A10061EBB9 /* umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = umbrella.png; path = ../../../../Downloads/umbrella.png; sourceTree = "<group>"; };
+		184F139B237A97A10061EBB9 /* ray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ray.png; path = ../../../../Downloads/ray.png; sourceTree = "<group>"; };
+		184F139C237A97A10061EBB9 /* washing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = washing.png; path = ../../../../Downloads/washing.png; sourceTree = "<group>"; };
 		58CE0E1B23714E2F00011C14 /* scutweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scutweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CE0E1E23714E2F00011C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58CE0E2023714E2F00011C14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +52,11 @@
 			children = (
 				58CE0E1D23714E2F00011C14 /* scutweather */,
 				58CE0E1C23714E2F00011C14 /* Products */,
+				184F139B237A97A10061EBB9 /* ray.png */,
+				184F1399237A97A10061EBB9 /* sports.png */,
+				184F139A237A97A10061EBB9 /* umbrella.png */,
+				184F139C237A97A10061EBB9 /* washing.png */,
+				184F1398237A97A10061EBB9 /* wearing.png */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,8 +140,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F13A1237A97A20061EBB9 /* washing.png in Resources */,
 				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
+				184F139E237A97A20061EBB9 /* sports.png in Resources */,
+				184F139F237A97A20061EBB9 /* umbrella.png in Resources */,
+				184F13A0237A97A20061EBB9 /* ray.png in Resources */,
 				58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */,
+				184F139D237A97A20061EBB9 /* wearing.png in Resources */,
 				58CE0E2423714E2F00011C14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

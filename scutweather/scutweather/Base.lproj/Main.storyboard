@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Kq-7h-jfk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -82,10 +82,10 @@
             </objects>
             <point key="canvasLocation" x="-583" y="102"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Weather View Controller-->
         <scene sceneID="HsI-IK-QRs">
             <objects>
-                <viewController id="4Kq-7h-jfk" sceneMemberID="viewController">
+                <viewController id="4Kq-7h-jfk" customClass="DetailWeatherViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q1b-k6-xmG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -182,10 +182,22 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IKP-bN-nzf"/>
                     </view>
+                    <connections>
+                        <outlet property="rays" destination="eTZ-6Z-ksL" id="ubj-84-IQq"/>
+                        <outlet property="raystext" destination="ViC-Gb-jY6" id="SWu-f7-VDQ"/>
+                        <outlet property="sports" destination="KIh-qh-vbN" id="B28-Oj-DLD"/>
+                        <outlet property="sportstext" destination="qAN-Lp-ZRv" id="N1r-Bp-Qfc"/>
+                        <outlet property="umbrella" destination="6mx-o3-4uK" id="Jz4-Zn-clX"/>
+                        <outlet property="umbrellatext" destination="XRf-jn-LvD" id="ce1-G0-OvC"/>
+                        <outlet property="washing" destination="w3c-34-Rto" id="Y4W-UE-ssE"/>
+                        <outlet property="washingtext" destination="zIU-Rz-HgF" id="NzL-x7-8Wv"/>
+                        <outlet property="wearing" destination="ScG-bb-2Da" id="ZHj-IT-20z"/>
+                        <outlet property="wearingtext" destination="ddk-zx-Kvt" id="Kbi-6i-AHj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I27-Yc-EMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-584.05797101449275" y="760.71428571428567"/>
+            <point key="canvasLocation" x="-188" y="772"/>
         </scene>
     </scenes>
 </document>
