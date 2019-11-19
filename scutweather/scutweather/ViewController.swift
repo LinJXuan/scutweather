@@ -10,17 +10,18 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var mainpic: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("yes")
         let http=httpConnection()
         http.seacherWeather(city: "广州")
-       
-        // Do any additional setup after loading the view.
+        
+        let path=Bundle.main.path(forResource: "sun", ofType: "jpg")
+        let fileimage=UIImage(contentsOfFile: path!)
+        mainpic.image=fileimage
+        let reSize = CGSize(width: 750, height: 1050)
+        mainpic.image = mainpic.image?.reSizeImage(reSize: reSize)
     }
-    
-    
-
 }
-
