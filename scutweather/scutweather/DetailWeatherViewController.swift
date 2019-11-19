@@ -10,6 +10,7 @@ import UIKit
 
 class DetailWeatherViewController: UIViewController {
 
+
     @IBOutlet weak var wearing: UIImageView!
     @IBOutlet weak var wearingtext: UILabel!
     
@@ -49,14 +50,55 @@ class DetailWeatherViewController: UIViewController {
         let path5=Bundle.main.path(forResource: "umbrella", ofType: "png")
         let fileimage5=UIImage(contentsOfFile: path5!)
         umbrella.image=fileimage5
-        
-        
-        
-        
-        
-        
         // Do any additional setup after loading the view.
+        
+        let wearingClick = UITapGestureRecognizer(target: self, action: #selector(wearingAction))
+        wearing.addGestureRecognizer(wearingClick)
+        wearing.isUserInteractionEnabled = true
+        
+        let raysClick = UITapGestureRecognizer(target: self, action: #selector(raysAction))
+        rays.addGestureRecognizer(raysClick)
+        rays.isUserInteractionEnabled = true
+        
+        let sportsClick = UITapGestureRecognizer(target: self, action: #selector(sportsAction))
+        sports.addGestureRecognizer(sportsClick)
+        sports.isUserInteractionEnabled = true
+        
+        let washingClick = UITapGestureRecognizer(target: self, action: #selector(washingAction))
+        washing.addGestureRecognizer(washingClick)
+        washing.isUserInteractionEnabled = true
+        
+        let umbrellaClick = UITapGestureRecognizer(target: self, action: #selector(umbrellaAction))
+        umbrella.addGestureRecognizer(umbrellaClick)
+        umbrella.isUserInteractionEnabled = true
+        
     }
     
+    @objc func wearingAction() -> Void{
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let destination = sb.instantiateViewController(withIdentifier: "wearingview") as! wearingViewController
+        self.present(destination,animated: true,completion: nil)
+    }
+    
+    @objc func raysAction() -> Void{
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let destination = sb.instantiateViewController(withIdentifier: "raysview") as! RaysViewController
+        self.present(destination,animated: true,completion: nil)
+    }
+    @objc func sportsAction() -> Void{
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let destination = sb.instantiateViewController(withIdentifier: "sportsview") as! SportsViewController
+        self.present(destination,animated: true,completion: nil)
+    }
+    @objc func washingAction() -> Void{
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let destination = sb.instantiateViewController(withIdentifier: "washingview") as! WashingViewController
+        self.present(destination,animated: true,completion: nil)
+    }
+    @objc func umbrellaAction() -> Void{
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let destination = sb.instantiateViewController(withIdentifier: "umbrellaview") as! UmbrellaViewController
+        self.present(destination,animated: true,completion: nil)
+    }
 
 }

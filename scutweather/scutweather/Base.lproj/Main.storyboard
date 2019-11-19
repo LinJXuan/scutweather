@@ -90,13 +90,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-bb-2Da">
-                                <rect key="frame" x="10" y="444" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="L9e-7E-tOF"/>
-                                    <constraint firstAttribute="height" constant="100" id="sSA-e2-nqq"/>
-                                </constraints>
-                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eTZ-6Z-ksL">
                                 <rect key="frame" x="157" y="444" width="100" height="100"/>
                                 <constraints>
@@ -155,6 +148,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-bb-2Da">
+                                <rect key="frame" x="10" y="444" width="100" height="100"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="L9e-7E-tOF"/>
+                                    <constraint firstAttribute="height" constant="100" id="sSA-e2-nqq"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -171,6 +172,7 @@
                             <constraint firstItem="eTZ-6Z-ksL" firstAttribute="centerX" secondItem="q1b-k6-xmG" secondAttribute="centerX" id="Z6m-FX-eti"/>
                             <constraint firstItem="w3c-34-Rto" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="50" id="Zml-bs-VIY"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="qAN-Lp-ZRv" secondAttribute="trailing" constant="40" id="ant-T0-rsU"/>
+                            <constraint firstItem="ScG-bb-2Da" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="10" id="b2n-Il-QRM"/>
                             <constraint firstItem="ScG-bb-2Da" firstAttribute="top" secondItem="IKP-bN-nzf" secondAttribute="top" constant="400" id="cFx-wo-qVx"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="6mx-o3-4uK" secondAttribute="trailing" constant="50" id="ggw-sf-G8B"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="bottom" secondItem="w3c-34-Rto" secondAttribute="bottom" constant="100" id="nTs-Hf-8zd"/>
@@ -198,6 +200,165 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I27-Yc-EMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-188" y="772"/>
+        </scene>
+        <!--Wearing View Controller-->
+        <scene sceneID="4DU-OO-CmS">
+            <objects>
+                <viewController storyboardIdentifier="wearingview" id="lj0-45-IyZ" customClass="wearingViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RWF-pX-5Aj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="abcdefg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBI-Nr-ko1">
+                                <rect key="frame" x="157" y="242" width="100" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="TWT-sZ-flU"/>
+                                    <constraint firstAttribute="height" constant="80" id="X23-AT-a8L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UYB-mH-GkJ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="QbQ-gb-rM2">
+                                        <connections>
+                                            <action selector="back:" destination="lj0-45-IyZ" id="8Dd-Vt-h1n"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <accessibility key="accessibilityConfiguration" identifier="destination"/>
+                        <constraints>
+                            <constraint firstItem="nBI-Nr-ko1" firstAttribute="top" secondItem="1fJ-Rm-HcB" secondAttribute="top" constant="200" id="EHH-Ke-6mU"/>
+                            <constraint firstItem="nBI-Nr-ko1" firstAttribute="centerX" secondItem="RWF-pX-5Aj" secondAttribute="centerX" id="PGf-dS-39L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1fJ-Rm-HcB"/>
+                    </view>
+                    <connections>
+                        <outlet property="backbutton" destination="QbQ-gb-rM2" id="c7B-TO-M2F"/>
+                        <outlet property="info" destination="nBI-Nr-ko1" id="wu9-Hi-5FQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Oy-gA-R6Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="771"/>
+        </scene>
+        <!--Washing View Controller-->
+        <scene sceneID="CAg-Kv-srE">
+            <objects>
+                <viewController storyboardIdentifier="washingview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jVr-vL-YbI" customClass="WashingViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SPh-X8-TVf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmT-wF-Psn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="done" id="DIo-jO-pgh">
+                                        <connections>
+                                            <action selector="back:" destination="jVr-vL-YbI" id="Lim-Uo-wGP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yke-fb-LDA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFL-6b-cYe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="50"/>
+        </scene>
+        <!--Umbrella View Controller-->
+        <scene sceneID="pgK-E6-yVF">
+            <objects>
+                <viewController storyboardIdentifier="umbrellaview" id="jPj-6M-d8W" customClass="UmbrellaViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vR-is-jhH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zzW-up-LjE">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="done" id="ZRG-g5-5fK">
+                                        <connections>
+                                            <action selector="back:" destination="jPj-6M-d8W" id="bf6-9m-jUX"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="I1w-UM-Gi8"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZAU-X1-iBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="50"/>
+        </scene>
+        <!--Rays View Controller-->
+        <scene sceneID="Hgc-yU-UHa">
+            <objects>
+                <viewController storyboardIdentifier="raysview" id="cy8-uD-nTy" customClass="RaysViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="npR-8W-6bK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jbN-wF-26J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="done" id="K0G-h2-EZA">
+                                        <connections>
+                                            <action selector="back:" destination="cy8-uD-nTy" id="jHl-uc-sbI"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LYy-Ka-Fsq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sWy-XB-WRd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1609" y="740"/>
+        </scene>
+        <!--Sports View Controller-->
+        <scene sceneID="egQ-gN-laU">
+            <objects>
+                <viewController storyboardIdentifier="sportsview" id="Rcn-gg-5af" customClass="SportsViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7CU-h5-sTb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zOx-eH-Q7V">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem title="Item" systemItem="done" id="txz-Sx-p8F">
+                                        <connections>
+                                            <action selector="back:" destination="Rcn-gg-5af" id="07C-qJ-t8o"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yTC-f9-paP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7w-jA-9y2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2796" y="740"/>
         </scene>
     </scenes>
 </document>
