@@ -14,8 +14,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("yes")
-        let http=httpConnection(t: "2014-09-11")
-        http.firstMethod()
+        let http=httpConnection()
+        http.seacherWeather(city: "广州")
        
         // Do any additional setup after loading the view.
     }

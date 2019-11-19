@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		58C1285A237A957C00009060 /* httpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C12859237A957C00009060 /* httpConnection.swift */; };
-		58C12862237A994B00009060 /* OldYellowBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C12861237A994B00009060 /* OldYellowBook.swift */; };
 		58C12887237AA11900009060 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C1287A237AA10D00009060 /* SwiftyJSON.framework */; };
 		58C12888237AA11900009060 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C1287A237AA10D00009060 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		58C6512A2383C54F003F7C58 /* weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C651292383C54F003F7C58 /* weather.swift */; };
 		58CB1FC2237A8E3A00449884 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58CB1FB5237A8E0C00449884 /* Alamofire.framework */; };
 		58CB1FC3237A8E3A00449884 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58CB1FB5237A8E0C00449884 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		58CE0E1F23714E2F00011C14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58CE0E1E23714E2F00011C14 /* AppDelegate.swift */; };
@@ -152,8 +152,8 @@
 
 /* Begin PBXFileReference section */
 		58C12859237A957C00009060 /* httpConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpConnection.swift; sourceTree = "<group>"; };
-		58C12861237A994B00009060 /* OldYellowBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OldYellowBook.swift; sourceTree = "<group>"; };
 		58C1286E237AA10C00009060 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		58C651292383C54F003F7C58 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
 		58CB1FAA237A8E0C00449884 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		58CE0E1B23714E2F00011C14 /* scutweather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scutweather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CE0E1E23714E2F00011C14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -233,7 +233,7 @@
 				58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */,
 				58CE0E2A23714E3000011C14 /* Info.plist */,
 				58C12859237A957C00009060 /* httpConnection.swift */,
-				58C12861237A994B00009060 /* OldYellowBook.swift */,
+				58C651292383C54F003F7C58 /* weather.swift */,
 			);
 			path = scutweather;
 			sourceTree = "<group>";
@@ -423,7 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58C12862237A994B00009060 /* OldYellowBook.swift in Sources */,
+				58C6512A2383C54F003F7C58 /* weather.swift in Sources */,
 				58CE0E2123714E2F00011C14 /* ViewController.swift in Sources */,
 				58CE0E1F23714E2F00011C14 /* AppDelegate.swift in Sources */,
 				58C1285A237A957C00009060 /* httpConnection.swift in Sources */,

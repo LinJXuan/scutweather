@@ -11,29 +11,35 @@ import Alamofire
 import SwiftyJSON
 
 class httpConnection{
-    var time: String
-    //老黄历
-    var jsonData: Data?
-    init(t: String) {
-        self.time=t
+    
+    var WT:[weather] = [weather]()
+    
+    
+    init() { }
+    
+    func seacherWeather(city: String) -> [weather]{
+        let url="http://v.juhe.cn/weather/index?format=2&cityname="+city+"&key=ce95fa5af917c93e2d01042d50db8ee7"
+        let newUrl = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
+        AF.request(newUrl, method: .get).responseJSON { (response) -> Void in
+                        switch response.result {
+                        case .success(let json):
+                            
+                            let dict = json as! Dictionary<String,AnyObject>
+                            let result = dict["result"] as! Dictionary<String,AnyObject>
+                            let future = result["future"] as! NSArray
+                            
+                            for i in 0...3{
+                                let fu = future[i] as! Dictionary<String,AnyObject>
+                                let temperature = fu["temperature"] as! String
+                                let weath = fu["weather"] as! String
+                                //print("temperature=:","\(temperature)","weather=:","\(weath)")
+                                self.WT.append(weather(temperature: temperature, weather: weath))
+                            }
+                        case .failure(let error):
+                            print("\(error)")
+                        }
+                   }
+        return WT
     }
     
-    func firstMethod(){
-        let url = "http://v.juhe.cn/laohuangli/d?date="+time+"&key=9877ecfb28acdd7f9c6dc6c5e1224ad3"
-        AF.request(url, method: .get).responseJSON { (response) -> Void in
-            switch response.result {
-            case .success(let json):
-                print("json=:","\(json)")
-                let dict = json as! Dictionary<String,AnyObject>
-                let result = dict["result"] as! Dictionary<String,String>
-                let yinli = result["yinli"] as! String
-                print("result=:","\(result)")
-                print("yinli=:","\(yinli)")
-            case .failure(let error):
-                print("\(error)")
-            }
-            
-            
-        }
-    }
 }
