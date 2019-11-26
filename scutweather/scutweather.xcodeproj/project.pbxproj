@@ -505,7 +505,7 @@
 				58CE0E2323714E2F00011C14 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../../../../../../../../../Users/apple/Documents/GitHub/scutweather/scutweather/scutweather;
+			path = ../../../../../../../../../Users/zuihouyipaide/Documents/GitHub/scutweather/scutweather/scutweather;
 			sourceTree = SDKROOT;
 		};
 		58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */ = {
