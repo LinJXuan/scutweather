@@ -33,9 +33,10 @@ class ViewController: UIViewController {
 //        var quality:String
 //        quality=http.seacherQuality(city: "输入城市")
 //        print(quality)
+        let path=Bundle.main.path(forResource: "sun", ofType: "jpg")
+        let fileimage=UIImage(contentsOfFile: path!)
+        mainpic.image=fileimage
+        let reSize = CGSize(width: 750, height: 1050)
+        mainpic.image = mainpic.image?.reSizeImage(reSize: reSize)
     }
-    
-    
-
 }
-

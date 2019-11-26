@@ -19,6 +19,10 @@
 		58CE0E2423714E2F00011C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2223714E2F00011C14 /* Main.storyboard */; };
 		58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2523714E3000011C14 /* Assets.xcassets */; };
 		58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */; };
+		EB1EB1D9237A9BA8009AE331 /* sun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB1EB1D8237A9BA8009AE331 /* sun.jpg */; };
+		EB1EB1DD237A9BB6009AE331 /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB1EB1DA237A9BB6009AE331 /* rain.jpg */; };
+		EB1EB1DE237A9BB6009AE331 /* cloud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB1EB1DB237A9BB6009AE331 /* cloud.jpg */; };
+		EB1EB1DF237A9BB6009AE331 /* lightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EB1EB1DC237A9BB6009AE331 /* lightning.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -164,6 +168,10 @@
 		58CE0E2523714E3000011C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58CE0E2823714E3000011C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58CE0E2A23714E3000011C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1EB1D8237A9BA8009AE331 /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sun.jpg; path = ../../../../Downloads/sun.jpg; sourceTree = "<group>"; };
+		EB1EB1DA237A9BB6009AE331 /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rain.jpg; path = ../../../../Downloads/rain.jpg; sourceTree = "<group>"; };
+		EB1EB1DB237A9BB6009AE331 /* cloud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cloud.jpg; path = ../../../../Downloads/cloud.jpg; sourceTree = "<group>"; };
+		EB1EB1DC237A9BB6009AE331 /* lightning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lightning.jpg; path = ../../../../Downloads/lightning.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,10 @@
 				58CB1FAA237A8E0C00449884 /* Alamofire.xcodeproj */,
 				58CE0E1D23714E2F00011C14 /* scutweather */,
 				58CE0E1C23714E2F00011C14 /* Products */,
+				EB1EB1D8237A9BA8009AE331 /* sun.jpg */,
+				EB1EB1DB237A9BB6009AE331 /* cloud.jpg */,
+				EB1EB1DC237A9BB6009AE331 /* lightning.jpg */,
+				EB1EB1DA237A9BB6009AE331 /* rain.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -413,7 +425,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1EB1DF237A9BB6009AE331 /* lightning.jpg in Resources */,
+				EB1EB1D9237A9BA8009AE331 /* sun.jpg in Resources */,
+				EB1EB1DD237A9BB6009AE331 /* rain.jpg in Resources */,
 				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
+				EB1EB1DE237A9BB6009AE331 /* cloud.jpg in Resources */,
 				58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */,
 				58CE0E2423714E2F00011C14 /* Main.storyboard in Resources */,
 			);
