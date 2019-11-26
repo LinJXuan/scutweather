@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		588E5222238CFB3D009F93E0 /* index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E5221238CFB3D009F93E0 /* index.swift */; };
 		58C1285A237A957C00009060 /* httpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C12859237A957C00009060 /* httpConnection.swift */; };
 		58C12887237AA11900009060 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C1287A237AA10D00009060 /* SwiftyJSON.framework */; };
 		58C12888237AA11900009060 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 58C1287A237AA10D00009060 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -151,6 +152,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		588E5221238CFB3D009F93E0 /* index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = index.swift; sourceTree = "<group>"; };
 		58C12859237A957C00009060 /* httpConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpConnection.swift; sourceTree = "<group>"; };
 		58C1286E237AA10C00009060 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
 		58C651292383C54F003F7C58 /* weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weather.swift; sourceTree = "<group>"; };
@@ -234,6 +236,7 @@
 				58CE0E2A23714E3000011C14 /* Info.plist */,
 				58C12859237A957C00009060 /* httpConnection.swift */,
 				58C651292383C54F003F7C58 /* weather.swift */,
+				588E5221238CFB3D009F93E0 /* index.swift */,
 			);
 			path = scutweather;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				58C6512A2383C54F003F7C58 /* weather.swift in Sources */,
 				58CE0E2123714E2F00011C14 /* ViewController.swift in Sources */,
 				58CE0E1F23714E2F00011C14 /* AppDelegate.swift in Sources */,
+				588E5222238CFB3D009F93E0 /* index.swift in Sources */,
 				58C1285A237A957C00009060 /* httpConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

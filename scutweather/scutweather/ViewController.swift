@@ -10,14 +10,29 @@ import UIKit
 import Alamofire
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("yes")
-        let http=httpConnection()
-        http.seacherWeather(city: "广州")
-       
-        // Do any additional setup after loading the view.
+        
+//        //使用说明
+//        let http=httpConnection()
+//
+//        //天气预报
+//        var WT:[weather] = [weather]()
+//        WT=http.seacherWeather(city: "输入城市")
+//        var wt : weather
+//        wt=WT[0]
+//        print(wt.temperature)
+//
+//        //指数
+//        var index:index
+//        index=http.getIndex()
+//        print(index.dressing_advice)
+//
+//        //空气质量
+//        var quality:String
+//        quality=http.seacherQuality(city: "输入城市")
+//        print(quality)
     }
     
     
