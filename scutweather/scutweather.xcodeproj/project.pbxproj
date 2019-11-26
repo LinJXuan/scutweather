@@ -31,6 +31,11 @@
 		58CE0E2423714E2F00011C14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2223714E2F00011C14 /* Main.storyboard */; };
 		58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2523714E3000011C14 /* Assets.xcassets */; };
 		58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */; };
+		EBB193F4238D078100BB534A /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB193F3238D078100BB534A /* ViewController2.swift */; };
+		EBB1940C238D10D800BB534A /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB19408238D10D800BB534A /* rain.jpg */; };
+		EBB1940D238D10D800BB534A /* cloud.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB19409238D10D800BB534A /* cloud.jpg */; };
+		EBB1940E238D10D800BB534A /* sun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB1940A238D10D800BB534A /* sun.jpg */; };
+		EBB1940F238D10D800BB534A /* lightning.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EBB1940B238D10D800BB534A /* lightning.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -188,6 +193,11 @@
 		58CE0E2523714E3000011C14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58CE0E2823714E3000011C14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58CE0E2A23714E3000011C14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB193F3238D078100BB534A /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		EBB19408238D10D800BB534A /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = rain.jpg; path = scutweather/icon/rain.jpg; sourceTree = "<group>"; };
+		EBB19409238D10D800BB534A /* cloud.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cloud.jpg; path = scutweather/icon/cloud.jpg; sourceTree = "<group>"; };
+		EBB1940A238D10D800BB534A /* sun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sun.jpg; path = scutweather/icon/sun.jpg; sourceTree = "<group>"; };
+		EBB1940B238D10D800BB534A /* lightning.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = lightning.jpg; path = scutweather/icon/lightning.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +253,10 @@
 				18DEAF3C238D0C7400A74350 /* umbrella.png */,
 				18DEAF3D238D0C7400A74350 /* washing.png */,
 				18DEAF3B238D0C7400A74350 /* wearing.png */,
+				EBB19409238D10D800BB534A /* cloud.jpg */,
+				EBB1940B238D10D800BB534A /* lightning.jpg */,
+				EBB19408238D10D800BB534A /* rain.jpg */,
+				EBB1940A238D10D800BB534A /* sun.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -273,6 +287,7 @@
 				58C12859237A957C00009060 /* httpConnection.swift */,
 				58C651292383C54F003F7C58 /* weather.swift */,
 				588E5221238CFB3D009F93E0 /* index.swift */,
+				EBB193F3238D078100BB534A /* ViewController2.swift */,
 			);
 			path = scutweather;
 			sourceTree = "<group>";
@@ -449,12 +464,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB1940F238D10D800BB534A /* lightning.jpg in Resources */,
 				18DEAF3F238D0C7500A74350 /* ray.png in Resources */,
 				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
 				18DEAF40238D0C7500A74350 /* wearing.png in Resources */,
+				EBB1940D238D10D800BB534A /* cloud.jpg in Resources */,
 				18DEAF41238D0C7500A74350 /* umbrella.png in Resources */,
 				18DEAF43238D0C7500A74350 /* sports.png in Resources */,
+				EBB1940C238D10D800BB534A /* rain.jpg in Resources */,
 				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
+				EBB1940E238D10D800BB534A /* sun.jpg in Resources */,
 				18DEAF39238D0A4C00A74350 /* icon in Resources */,
 				58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */,
 				18DEAF42238D0C7500A74350 /* washing.png in Resources */,
@@ -480,6 +499,7 @@
 				18B218D42383D88300904FA4 /* SportsViewController.swift in Sources */,
 				588E5222238CFB3D009F93E0 /* index.swift in Sources */,
 				58C1285A237A957C00009060 /* httpConnection.swift in Sources */,
+				EBB193F4238D078100BB534A /* ViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,7 +525,7 @@
 				58CE0E2323714E2F00011C14 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../../../../../../../../../Users/zuihouyipaide/Documents/GitHub/scutweather/scutweather/scutweather;
+			path = ../../../../../../../../../Users/clement/Documents/GitHub/scutweather/scutweather/scutweather;
 			sourceTree = SDKROOT;
 		};
 		58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */ = {
