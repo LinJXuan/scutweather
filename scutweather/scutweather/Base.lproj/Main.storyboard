@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Czd-KB-Bhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="299" y="102"/>
+            <point key="canvasLocation" x="822" y="50"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="jat-fI-nlT">
@@ -80,7 +80,7 @@
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="g11-ZY-8nR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XGY-Le-ddV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-583" y="102"/>
+            <point key="canvasLocation" x="-188" y="50"/>
         </scene>
         <!--Detail Weather View Controller-->
         <scene sceneID="HsI-IK-QRs">
