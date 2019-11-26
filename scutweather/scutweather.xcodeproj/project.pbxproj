@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184F138B237A87130061EBB9 /* DetailWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */; };
+		184F139D237A97A20061EBB9 /* wearing.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F1398237A97A10061EBB9 /* wearing.png */; };
+		184F139E237A97A20061EBB9 /* sports.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F1399237A97A10061EBB9 /* sports.png */; };
+		184F139F237A97A20061EBB9 /* umbrella.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F139A237A97A10061EBB9 /* umbrella.png */; };
+		184F13A0237A97A20061EBB9 /* ray.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F139B237A97A10061EBB9 /* ray.png */; };
+		184F13A1237A97A20061EBB9 /* washing.png in Resources */ = {isa = PBXBuildFile; fileRef = 184F139C237A97A10061EBB9 /* washing.png */; };
+		184F13A3237AA2670061EBB9 /* wearingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F13A2237AA2670061EBB9 /* wearingViewController.swift */; };
+		18B218CE2383D84600904FA4 /* UmbrellaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B218CD2383D84600904FA4 /* UmbrellaViewController.swift */; };
+		18B218D02383D85300904FA4 /* RaysViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B218CF2383D85300904FA4 /* RaysViewController.swift */; };
+		18B218D22383D85F00904FA4 /* WashingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B218D12383D85F00904FA4 /* WashingViewController.swift */; };
+		18B218D42383D88300904FA4 /* SportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B218D32383D88300904FA4 /* SportsViewController.swift */; };
 		588E5222238CFB3D009F93E0 /* index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588E5221238CFB3D009F93E0 /* index.swift */; };
 		58C1285A237A957C00009060 /* httpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C12859237A957C00009060 /* httpConnection.swift */; };
 		58C12887237AA11900009060 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58C1287A237AA10D00009060 /* SwiftyJSON.framework */; };
@@ -156,6 +167,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherViewController.swift; sourceTree = "<group>"; };
+		184F1398237A97A10061EBB9 /* wearing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wearing.png; path = ../../../../Downloads/wearing.png; sourceTree = "<group>"; };
+		184F1399237A97A10061EBB9 /* sports.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sports.png; path = ../../../../Downloads/sports.png; sourceTree = "<group>"; };
+		184F139A237A97A10061EBB9 /* umbrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = umbrella.png; path = ../../../../Downloads/umbrella.png; sourceTree = "<group>"; };
+		184F139B237A97A10061EBB9 /* ray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ray.png; path = ../../../../Downloads/ray.png; sourceTree = "<group>"; };
+		184F139C237A97A10061EBB9 /* washing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = washing.png; path = ../../../../Downloads/washing.png; sourceTree = "<group>"; };
+		184F13A2237AA2670061EBB9 /* wearingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wearingViewController.swift; sourceTree = "<group>"; };
+		18B218CD2383D84600904FA4 /* UmbrellaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaViewController.swift; sourceTree = "<group>"; };
+		18B218CF2383D85300904FA4 /* RaysViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaysViewController.swift; sourceTree = "<group>"; };
+		18B218D12383D85F00904FA4 /* WashingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingViewController.swift; sourceTree = "<group>"; };
+		18B218D32383D88300904FA4 /* SportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportsViewController.swift; sourceTree = "<group>"; };
 		588E5221238CFB3D009F93E0 /* index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = index.swift; sourceTree = "<group>"; };
 		58C12859237A957C00009060 /* httpConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = httpConnection.swift; sourceTree = "<group>"; };
 		58C1286E237AA10C00009060 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
@@ -222,6 +244,11 @@
 				58CB1FAA237A8E0C00449884 /* Alamofire.xcodeproj */,
 				58CE0E1D23714E2F00011C14 /* scutweather */,
 				58CE0E1C23714E2F00011C14 /* Products */,
+				184F139B237A97A10061EBB9 /* ray.png */,
+				184F1399237A97A10061EBB9 /* sports.png */,
+				184F139A237A97A10061EBB9 /* umbrella.png */,
+				184F139C237A97A10061EBB9 /* washing.png */,
+				184F1398237A97A10061EBB9 /* wearing.png */,
 				EB1EB1D8237A9BA8009AE331 /* sun.jpg */,
 				EB1EB1DB237A9BB6009AE331 /* cloud.jpg */,
 				EB1EB1DC237A9BB6009AE331 /* lightning.jpg */,
@@ -243,9 +270,15 @@
 				58CE0E1E23714E2F00011C14 /* AppDelegate.swift */,
 				58CE0E2023714E2F00011C14 /* ViewController.swift */,
 				58CE0E2223714E2F00011C14 /* Main.storyboard */,
+				184F13A2237AA2670061EBB9 /* wearingViewController.swift */,
 				58CE0E2523714E3000011C14 /* Assets.xcassets */,
 				58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */,
 				58CE0E2A23714E3000011C14 /* Info.plist */,
+				184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */,
+				18B218CD2383D84600904FA4 /* UmbrellaViewController.swift */,
+				18B218D32383D88300904FA4 /* SportsViewController.swift */,
+				18B218CF2383D85300904FA4 /* RaysViewController.swift */,
+				18B218D12383D85F00904FA4 /* WashingViewController.swift */,
 				58C12859237A957C00009060 /* httpConnection.swift */,
 				58C651292383C54F003F7C58 /* weather.swift */,
 				588E5221238CFB3D009F93E0 /* index.swift */,
@@ -425,12 +458,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F13A1237A97A20061EBB9 /* washing.png in Resources */,
+				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
+				184F139E237A97A20061EBB9 /* sports.png in Resources */,
+				184F139F237A97A20061EBB9 /* umbrella.png in Resources */,
+				184F13A0237A97A20061EBB9 /* ray.png in Resources */,
 				EB1EB1DF237A9BB6009AE331 /* lightning.jpg in Resources */,
 				EB1EB1D9237A9BA8009AE331 /* sun.jpg in Resources */,
 				EB1EB1DD237A9BB6009AE331 /* rain.jpg in Resources */,
 				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
 				EB1EB1DE237A9BB6009AE331 /* cloud.jpg in Resources */,
 				58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */,
+				184F139D237A97A20061EBB9 /* wearing.png in Resources */,
 				58CE0E2423714E2F00011C14 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,9 +481,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184F138B237A87130061EBB9 /* DetailWeatherViewController.swift in Sources */,
 				58C6512A2383C54F003F7C58 /* weather.swift in Sources */,
 				58CE0E2123714E2F00011C14 /* ViewController.swift in Sources */,
+				18B218CE2383D84600904FA4 /* UmbrellaViewController.swift in Sources */,
+				18B218D22383D85F00904FA4 /* WashingViewController.swift in Sources */,
+				184F13A3237AA2670061EBB9 /* wearingViewController.swift in Sources */,
 				58CE0E1F23714E2F00011C14 /* AppDelegate.swift in Sources */,
+				18B218D02383D85300904FA4 /* RaysViewController.swift in Sources */,
+				18B218D42383D88300904FA4 /* SportsViewController.swift in Sources */,
 				588E5222238CFB3D009F93E0 /* index.swift in Sources */,
 				58C1285A237A957C00009060 /* httpConnection.swift in Sources */,
 			);
@@ -472,7 +517,8 @@
 				58CE0E2323714E2F00011C14 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = ../../../../../../../../../Users/apple/Documents/GitHub/scutweather/scutweather/scutweather;
+			sourceTree = SDKROOT;
 		};
 		58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
