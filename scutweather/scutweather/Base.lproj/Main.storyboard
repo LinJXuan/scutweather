@@ -178,7 +178,15 @@
                         <viewLayoutGuide key="safeArea" id="2Pr-gY-Qj4"/>
                     </view>
                     <connections>
+                        <outlet property="day1" destination="738-ES-Nx9" id="BCV-gq-96L"/>
+                        <outlet property="day2" destination="pdS-Fk-QEY" id="CSj-mR-AYq"/>
+                        <outlet property="day3" destination="Fzm-3M-Z3S" id="WC2-Ct-1KR"/>
+                        <outlet property="day4" destination="Xbt-UN-LVw" id="sos-Hl-TRS"/>
                         <outlet property="mainpic" destination="QvT-qc-Qaa" id="SpE-AK-zb3"/>
+                        <outlet property="tem1" destination="TKI-I0-3Wy" id="zCe-XL-Umz"/>
+                        <outlet property="tem2" destination="mTE-N1-gWu" id="mfE-lv-ear"/>
+                        <outlet property="tem3" destination="lBq-UG-dAm" id="ZTe-Uj-Pxe"/>
+                        <outlet property="tem4" destination="aOQ-Mq-RTw" id="BTk-Hn-4NS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Czd-KB-Bhc" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -56,8 +56,7 @@ class httpConnection{
                         case .failure(let error):
                             print("\(error)")
                         }
-                   }
-        
+        }
         while self.WT.isEmpty{
             //print("等待WT的值")
             RunLoop.current.run(mode: RunLoop.Mode.default, before: Date.distantFuture)
