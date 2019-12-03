@@ -27,10 +27,15 @@ class DetailWeatherViewController: UIViewController {
     @IBOutlet weak var umbrella: UIImageView!
     @IBOutlet weak var umbrellatext: UILabel!
     
+    @IBOutlet weak var cityLifeData: UILabel!
     
+    @IBOutlet weak var scene: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        var cityname = ""
+        
         let path1=Bundle.main.path(forResource: "wearing", ofType: "png")
         let fileimage1=UIImage(contentsOfFile: path1!)
         wearing.image=fileimage1
@@ -52,6 +57,10 @@ class DetailWeatherViewController: UIViewController {
         umbrella.image=fileimage5
         // Do any additional setup after loading the view.
         
+        let path6 = Bundle.main.path(forResource: "scene", ofType: "jpg")
+        let fileimage6 = UIImage(contentsOfFile: path6!)
+        scene.image=fileimage6
+        
         let wearingClick = UITapGestureRecognizer(target: self, action: #selector(wearingAction))
         wearing.addGestureRecognizer(wearingClick)
         wearing.isUserInteractionEnabled = true
@@ -71,6 +80,12 @@ class DetailWeatherViewController: UIViewController {
         let umbrellaClick = UITapGestureRecognizer(target: self, action: #selector(umbrellaAction))
         umbrella.addGestureRecognizer(umbrellaClick)
         umbrella.isUserInteractionEnabled = true
+        
+//        let http=httpConnection()
+//        var index:index
+//        index = http.seacherIndex(city: "广州")
+        let text = cityname + "生活指数预报"
+        cityLifeData.text = text
         
     }
     

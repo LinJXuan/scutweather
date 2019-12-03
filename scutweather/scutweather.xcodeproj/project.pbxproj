@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18178170239649AE00D53891 /* scene.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1817816F239649AE00D53891 /* scene.jpg */; };
 		184F138B237A87130061EBB9 /* DetailWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */; };
 		184F13A3237AA2670061EBB9 /* wearingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184F13A2237AA2670061EBB9 /* wearingViewController.swift */; };
 		18B218CE2383D84600904FA4 /* UmbrellaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B218CD2383D84600904FA4 /* UmbrellaViewController.swift */; };
@@ -164,6 +165,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1817816F239649AE00D53891 /* scene.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = scene.jpg; path = ../../../../Downloads/scene.jpg; sourceTree = "<group>"; };
 		184F138A237A87130061EBB9 /* DetailWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherViewController.swift; sourceTree = "<group>"; };
 		184F13A2237AA2670061EBB9 /* wearingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wearingViewController.swift; sourceTree = "<group>"; };
 		18B218CD2383D84600904FA4 /* UmbrellaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				18DEAF3C238D0C7400A74350 /* umbrella.png */,
 				18DEAF3D238D0C7400A74350 /* washing.png */,
 				18DEAF3B238D0C7400A74350 /* wearing.png */,
+				1817816F239649AE00D53891 /* scene.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -454,6 +457,7 @@
 				18DEAF40238D0C7500A74350 /* wearing.png in Resources */,
 				18DEAF41238D0C7500A74350 /* umbrella.png in Resources */,
 				18DEAF43238D0C7500A74350 /* sports.png in Resources */,
+				18178170239649AE00D53891 /* scene.jpg in Resources */,
 				58CE0E2923714E3000011C14 /* LaunchScreen.storyboard in Resources */,
 				18DEAF39238D0A4C00A74350 /* icon in Resources */,
 				58CE0E2623714E3000011C14 /* Assets.xcassets in Resources */,
@@ -505,7 +509,7 @@
 				58CE0E2323714E2F00011C14 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../../../../../../../../../Users/zuihouyipaide/Documents/GitHub/scutweather/scutweather/scutweather;
+			path = ../../../../../../../../../Users/apple/Documents/GitHub/scutweather/scutweather/scutweather;
 			sourceTree = SDKROOT;
 		};
 		58CE0E2723714E3000011C14 /* LaunchScreen.storyboard */ = {

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="l5i-Gn-UkD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4Kq-7h-jfk">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -275,12 +275,23 @@
                                     <constraint firstAttribute="height" constant="100" id="sSA-e2-nqq"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="生活指数预报" lineBreakMode="tailTruncation" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUu-oh-2tC">
+                                <rect key="frame" x="155" y="393.5" width="104" height="20.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="J9S-an-aaX">
+                                <rect key="frame" x="0.0" y="74" width="414" height="289.5"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ScG-bb-2Da" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="10" id="7DL-At-ets"/>
                             <constraint firstItem="KIh-qh-vbN" firstAttribute="top" secondItem="IKP-bN-nzf" secondAttribute="top" constant="400" id="962-Ip-wgq"/>
                             <constraint firstItem="ddk-zx-Kvt" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="40" id="HoH-ar-Jam"/>
+                            <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="J9S-an-aaX" secondAttribute="trailing" id="L9X-h4-3Rr"/>
+                            <constraint firstItem="J9S-an-aaX" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" id="LXC-Sg-PIU"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="XRf-jn-LvD" secondAttribute="trailing" constant="80" id="MQt-du-HZW"/>
                             <constraint firstItem="eTZ-6Z-ksL" firstAttribute="centerX" secondItem="q1b-k6-xmG" secondAttribute="centerX" id="P0m-zM-KMg"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="KIh-qh-vbN" secondAttribute="trailing" constant="10" id="P4m-R6-xNA"/>
@@ -288,24 +299,31 @@
                             <constraint firstItem="zIU-Rz-HgF" firstAttribute="top" secondItem="w3c-34-Rto" secondAttribute="bottom" constant="20" id="SCZ-Ws-W3T"/>
                             <constraint firstItem="eTZ-6Z-ksL" firstAttribute="top" secondItem="IKP-bN-nzf" secondAttribute="top" constant="400" id="VD9-m7-jc5"/>
                             <constraint firstItem="ViC-Gb-jY6" firstAttribute="top" secondItem="eTZ-6Z-ksL" secondAttribute="bottom" constant="20" id="Vbq-Tw-oHy"/>
+                            <constraint firstItem="J9S-an-aaX" firstAttribute="centerX" secondItem="q1b-k6-xmG" secondAttribute="centerX" id="XN0-Wa-dzk"/>
                             <constraint firstItem="eTZ-6Z-ksL" firstAttribute="centerX" secondItem="q1b-k6-xmG" secondAttribute="centerX" id="Z6m-FX-eti"/>
                             <constraint firstItem="w3c-34-Rto" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="50" id="Zml-bs-VIY"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="qAN-Lp-ZRv" secondAttribute="trailing" constant="40" id="ant-T0-rsU"/>
                             <constraint firstItem="ScG-bb-2Da" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="10" id="b2n-Il-QRM"/>
                             <constraint firstItem="ScG-bb-2Da" firstAttribute="top" secondItem="IKP-bN-nzf" secondAttribute="top" constant="400" id="cFx-wo-qVx"/>
+                            <constraint firstItem="J9S-an-aaX" firstAttribute="top" secondItem="IKP-bN-nzf" secondAttribute="top" constant="30" id="ccd-fn-bXg"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="trailing" secondItem="6mx-o3-4uK" secondAttribute="trailing" constant="50" id="ggw-sf-G8B"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="bottom" secondItem="w3c-34-Rto" secondAttribute="bottom" constant="100" id="nTs-Hf-8zd"/>
                             <constraint firstItem="ddk-zx-Kvt" firstAttribute="top" secondItem="ScG-bb-2Da" secondAttribute="bottom" constant="20" id="ouc-cu-unG"/>
                             <constraint firstItem="zIU-Rz-HgF" firstAttribute="leading" secondItem="IKP-bN-nzf" secondAttribute="leading" constant="80" id="qsm-s6-KkD"/>
+                            <constraint firstItem="mUu-oh-2tC" firstAttribute="centerX" secondItem="q1b-k6-xmG" secondAttribute="centerX" id="r6X-pa-laS"/>
                             <constraint firstItem="IKP-bN-nzf" firstAttribute="bottom" secondItem="6mx-o3-4uK" secondAttribute="bottom" constant="100" id="sCQ-ZF-XmO"/>
                             <constraint firstItem="qAN-Lp-ZRv" firstAttribute="top" secondItem="KIh-qh-vbN" secondAttribute="bottom" constant="20" id="suF-hs-yCq"/>
                             <constraint firstItem="ViC-Gb-jY6" firstAttribute="centerX" secondItem="q1b-k6-xmG" secondAttribute="centerX" id="yEX-si-TRT"/>
+                            <constraint firstItem="mUu-oh-2tC" firstAttribute="top" secondItem="J9S-an-aaX" secondAttribute="bottom" constant="30" id="yRH-HH-h1H"/>
+                            <constraint firstItem="eTZ-6Z-ksL" firstAttribute="top" secondItem="mUu-oh-2tC" secondAttribute="bottom" constant="30" id="yhW-od-dbc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IKP-bN-nzf"/>
                     </view>
                     <connections>
+                        <outlet property="cityLifeData" destination="mUu-oh-2tC" id="pNo-Q6-ZEK"/>
                         <outlet property="rays" destination="eTZ-6Z-ksL" id="ubj-84-IQq"/>
                         <outlet property="raystext" destination="ViC-Gb-jY6" id="SWu-f7-VDQ"/>
+                        <outlet property="scene" destination="J9S-an-aaX" id="41I-sq-gJo"/>
                         <outlet property="sports" destination="KIh-qh-vbN" id="B28-Oj-DLD"/>
                         <outlet property="sportstext" destination="qAN-Lp-ZRv" id="N1r-Bp-Qfc"/>
                         <outlet property="umbrella" destination="6mx-o3-4uK" id="Jz4-Zn-clX"/>
@@ -318,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I27-Yc-EMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-613" y="751"/>
+            <point key="canvasLocation" x="-613.04347826086962" y="750.66964285714278"/>
         </scene>
         <!--Wearing View Controller-->
         <scene sceneID="4DU-OO-CmS">
