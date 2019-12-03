@@ -20,19 +20,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var day1: UILabel!
     @IBOutlet weak var mainpic: UIImageView!
     
+    @IBOutlet weak var top: UINavigationItem!
     @IBAction func button(_ sender: Any) {
         
     }
-    
-    
-    
+
     var wt1: weather?
     var wt2: weather?
     var wt3: weather?
     var wt4: weather?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.top.title="123"
 //        //使用说明
 //        let http=httpConnection()
 //
@@ -78,17 +77,17 @@ class ViewController: UIViewController {
 //            let fileimage=UIImage(contentsOfFile: path!)
 //            mainpic.image=fileimage
 //        }
-        let http=httpConnection()
-        var WT:[weather] = [weather]()
-        WT=http.seacherWeather(city: "广州")
-        wt1=WT[0]
-        wt2=WT[0]
-        wt3=WT[0]
-        wt4=WT[0]
-        day1.text=wt1?.weather
-        day2.text=wt2?.weather
-        day3.text=wt3?.weather
-        day4.text=wt4?.weather
+        //let http=httpConnection()
+        //var WT:[weather] = [weather]()
+        //WT=http.seacherWeather(city: "广州")
+        //wt1=WT[0]
+        //wt2=WT[0]
+        //wt3=WT[0]
+        //wt4=WT[0]
+        day1.text="晴天"
+        day2.text="晴天"
+        day3.text="晴天"
+        day4.text="晴天"
         if day1.text=="晴天" {
         let path=Bundle.main.path(forResource: "sun", ofType: "jpg")
         let fileimage=UIImage(contentsOfFile: path!)
@@ -109,9 +108,9 @@ class ViewController: UIViewController {
             let fileimage=UIImage(contentsOfFile: path!)
             mainpic.image=fileimage
         }
-        tem1.text=wt1?.temperature
-        tem2.text=wt2?.temperature
-        tem3.text=wt3?.temperature
-        tem4.text=wt4?.temperature
+        tem1.text="晴天"
+        tem2.text="晴天"
+        tem3.text="晴天"
+        tem4.text="晴天"
     }
 }
