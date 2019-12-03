@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HFb-z6-1jB">
-
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -180,7 +178,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title=" "/>
                                         <connections>
-                                            <segue destination="4Kq-7h-jfk" kind="show" id="XIf-ur-GGS"/>
+                                            <segue destination="383-kt-7Id" kind="show" id="g94-ka-xBb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -232,11 +230,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="广州" id="JBF-Qb-eUe">
                         <barButtonItem key="backBarButtonItem" title="返回" id="oCI-A3-mqe"/>
-                        <barButtonItem key="rightBarButtonItem" title="更换城市" id="3C1-d9-jUm">
-                            <connections>
-                                <segue destination="383-kt-7Id" kind="show" id="yHk-14-ewY"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="更换城市" id="3C1-d9-jUm"/>
                     </navigationItem>
                     <connections>
                         <outlet property="day1" destination="738-ES-Nx9" id="BCV-gq-96L"/>
@@ -272,14 +266,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eTZ-6Z-ksL">
-                                <rect key="frame" x="157" y="488" width="100" height="100"/>
+                                <rect key="frame" x="157" y="444" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="420-R7-Mct"/>
                                     <constraint firstAttribute="width" constant="100" id="i5l-dK-vFb"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KIh-qh-vbN">
-                                <rect key="frame" x="304" y="488" width="100" height="100"/>
+                                <rect key="frame" x="304" y="444" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="WUI-Af-74s"/>
                                     <constraint firstAttribute="width" constant="100" id="uP6-0W-w8D"/>
@@ -300,19 +294,19 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddk-zx-Kvt">
-                                <rect key="frame" x="40" y="608" width="42" height="21"/>
+                                <rect key="frame" x="40" y="564" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViC-Gb-jY6">
-                                <rect key="frame" x="186" y="608" width="42" height="21"/>
+                                <rect key="frame" x="186" y="564" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAN-Lp-ZRv">
-                                <rect key="frame" x="332" y="608" width="42" height="21"/>
+                                <rect key="frame" x="332" y="564" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -330,7 +324,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ScG-bb-2Da">
-                                <rect key="frame" x="10" y="488" width="100" height="100"/>
+                                <rect key="frame" x="10" y="444" width="100" height="100"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="L9e-7E-tOF"/>
@@ -562,7 +556,7 @@
         <!--Root View Controller-->
         <scene sceneID="idI-zM-tu5">
             <objects>
-                <tableViewController id="383-kt-7Id" sceneMemberID="viewController">
+                <tableViewController id="383-kt-7Id" customClass="WTTableViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8cy-M5-0qs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -582,7 +576,13 @@
                             <outlet property="delegate" destination="383-kt-7Id" id="7wa-xD-sgE"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="tP9-gn-Dik"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="tP9-gn-Dik">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Sl4-uT-WpD">
+                            <connections>
+                                <segue destination="EtE-Qd-GaX" kind="show" id="nku-K5-02p"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RJe-Ii-s1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -597,7 +597,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="l5i-Gn-UkD" kind="relationship" relationship="rootViewController" id="Ctr-to-akh"/>
+                        <segue destination="l5i-Gn-UkD" kind="relationship" relationship="rootViewController" id="tYZ-RF-3bg"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDR-Z9-Jfv" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -623,9 +623,6 @@
                                 <rect key="frame" x="151" y="342" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="EtE-Qd-GaX" kind="show" id="yQN-6I-bcE"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -639,20 +636,45 @@
             </objects>
             <point key="canvasLocation" x="1033" y="50"/>
         </scene>
-        <!--View Controller2-->
+        <!--Title-->
         <scene sceneID="7fE-5w-I1p">
             <objects>
-                <viewController id="EtE-Qd-GaX" customClass="ViewController2" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="EtE-Qd-GaX" customClass="WTListViewController" customModule="scutweather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vSX-A9-4h8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hyY-6c-fDj">
+                                <rect key="frame" x="159" y="352" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aEU-Gr-O31"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="XUt-Ci-MlU">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="D1J-nn-apg">
+                            <connections>
+                                <segue destination="QxI-k6-kSe" kind="unwind" unwindAction="cancelToListWithSegue:" id="Yz8-Kt-d9i"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="jwO-yz-gnW">
+                            <connections>
+                                <segue destination="QxI-k6-kSe" kind="unwind" unwindAction="saveToListWithSegue:" id="sCf-mb-4Bt"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="city" destination="hyY-6c-fDj" id="zB0-AT-PaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uF8-lc-Syd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QxI-k6-kSe" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1764" y="50"/>
+            <point key="canvasLocation" x="1901" y="-719"/>
         </scene>
     </scenes>
 </document>
