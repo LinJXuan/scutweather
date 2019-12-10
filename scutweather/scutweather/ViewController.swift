@@ -35,8 +35,10 @@ class ViewController: UIViewController {
         var cityname:String?
         let qb=QuanBian()
         cityname=qb.getName()
-        print("123"+cityname! ?? "0");
-        self.top.title=cityname;
+        var realname:String?
+        if (cityname=="BeiJing") {realname="北京"}
+        
+        self.top.title="上海";
 //        //使用说明
 //        let http=httpConnection()
 //
@@ -90,9 +92,9 @@ class ViewController: UIViewController {
         wt2=WT[0]
         wt3=WT[0]
         wt4=WT[0]
-        day1.text="晴天"
-        day2.text="晴天"
-        day3.text="晴天"
+        day1.text="多云"
+        day2.text="小雨"
+        day3.text="多云"
         day4.text="晴天"
         if day1.text=="晴天" {
         let path=Bundle.main.path(forResource: "sun", ofType: "jpg")
@@ -114,9 +116,9 @@ class ViewController: UIViewController {
             let fileimage=UIImage(contentsOfFile: path!)
             mainpic.image=fileimage
         }
-        tem1.text="晴天"
-        tem2.text="晴天"
-        tem3.text="晴天"
-        tem4.text="晴天"
+        tem1.text="10-12"
+        tem2.text="12-14"
+        tem3.text="12-16"
+        tem4.text="13-18"
     }
 }

@@ -135,7 +135,7 @@ class WTTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
         
         if segue.identifier=="showDetail"{
-            let descriptionVC = segue.destination as! WTListViewController
+            let descriptionVC = segue.destination as! AViewController
             if let selectedCell = sender as? UITableViewCell{
                 let indexPath = tableView.indexPath(for: selectedCell)!
                 let selectedCity = cityList[(indexPath as NSIndexPath).row]
