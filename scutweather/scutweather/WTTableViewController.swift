@@ -15,8 +15,8 @@ class WTTableViewController: UITableViewController {
     func initcityList(){
         
         if loadcityFile()==nil{
-            cityList.append(List(city: "cake"))
-            cityList.append(List(city: "fish"))
+            cityList.append(List(city: "北京"))
+            cityList.append(List(city: "佛山"))
         }else{
             cityList=loadcityFile()!
         }
@@ -27,6 +27,7 @@ class WTTableViewController: UITableViewController {
         if !success{
             print("failed!--")
         }
+        
     }
     
     func loadcityFile()->[List]?{

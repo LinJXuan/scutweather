@@ -29,9 +29,14 @@ class ViewController: UIViewController {
     var wt2: weather?
     var wt3: weather?
     var wt4: weather?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.top.title="123"
+        var cityname:String?
+        let qb=QuanBian()
+        cityname=qb.getName()
+        print("123"+cityname! ?? "0");
+        self.top.title=cityname;
 //        //使用说明
 //        let http=httpConnection()
 //
@@ -53,10 +58,10 @@ class ViewController: UIViewController {
 //        print(quality)
    
         
-        day1.text="多云"
-        day2.text="晴天"
-        day3.text="晴天"
-        day4.text="晴天"
+        //day1.text="多云"
+        //day2.text="晴天"
+        //day3.text="晴天"
+        //day4.text="晴天"
 //        if day1.text=="晴天" {
 //        let path=Bundle.main.path(forResource: "sun", ofType: "jpg")
 //        let fileimage=UIImage(contentsOfFile: path!)
@@ -77,13 +82,14 @@ class ViewController: UIViewController {
 //            let fileimage=UIImage(contentsOfFile: path!)
 //            mainpic.image=fileimage
 //        }
-        //let http=httpConnection()
-        //var WT:[weather] = [weather]()
-        //WT=http.seacherWeather(city: "广州")
-        //wt1=WT[0]
-        //wt2=WT[0]
-        //wt3=WT[0]
-        //wt4=WT[0]
+        let http=httpConnection()
+        var WT:[weather] = [weather]()
+        WT=http.seacherWeather(city: "广州")
+        
+        wt1=WT[0]
+        wt2=WT[0]
+        wt3=WT[0]
+        wt4=WT[0]
         day1.text="晴天"
         day2.text="晴天"
         day3.text="晴天"

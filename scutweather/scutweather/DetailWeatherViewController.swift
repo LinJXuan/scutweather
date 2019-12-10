@@ -31,6 +31,7 @@ class DetailWeatherViewController: UIViewController {
     
     @IBOutlet weak var scene: UIImageView!
     
+    @IBOutlet weak var cityname: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -84,8 +85,14 @@ class DetailWeatherViewController: UIViewController {
 //        let http=httpConnection()
 //        var index:index
 //        index = http.seacherIndex(city: "广州")
-        let text = cityname + "生活指数预报"
+        let text = "生活指数预报"
         cityLifeData.text = text
+        
+        wearingtext.text = "适宜穿长袖"
+        raystext.text = "紫外线强度高"
+        sportstext.text="适宜户外运动"
+        washingtext.text="适宜洗车"
+        umbrellatext.text="不需带伞"
         
     }
     

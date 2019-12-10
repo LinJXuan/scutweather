@@ -31,6 +31,8 @@ class WTListViewController: UIViewController {
         if segue.identifier == "saveToList"{
             print("save")
             WTforEdit=List(city: self.city.text!)
+            QuanBian.acityName=self.city.text!
+            print(QuanBian.acityName)
         }
         if segue.identifier == "cancelToList"{
             print("cancel")
